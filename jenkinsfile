@@ -18,8 +18,7 @@ pipeline {
          steps {
             sh '''
                   cd flask_app
-                  docker build -t mzmarci/$version .
-                  docker tag mzmarci/$version
+                  docker build -t mzmarci/marcifx:$version .
                '''   
          }
        }
